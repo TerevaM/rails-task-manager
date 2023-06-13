@@ -1,15 +1,50 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(180, 255, 254);
+  padding: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.126);
+  padding: 20px;
+  margin: 5px;
+}
+
+li > * {
+  margin: 5px;
+}
+
+li > h2 {
+  text-transform: uppercase;
+}
+
+li:hover {
+  background-color: rgba(128, 128, 128, 0.422);
+}
+
+.details {
+  background-color: rgba(82, 82, 82, 0.406);
+  padding: 50px 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+  color: white;
+}
+
+.buttons {
+  background-color: rgba(184, 184, 184, 0.324);
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
